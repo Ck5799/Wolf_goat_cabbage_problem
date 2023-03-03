@@ -1,7 +1,7 @@
 from search import *
 
 class WolfGoatCabbage(Problem):
-     def __init__(self, initial=('G', 'F', 'C', 'W'), goal=set()):
+     def __init__(self, initial=frozenset('G', 'F', 'C', 'W'), goal=set()):
         """ Define goal state and initialize a problem """
         super().__init__(initial, goal)
 
